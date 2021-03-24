@@ -1,0 +1,67 @@
+/*     Base Styles     */
+header {
+  background-color: #cc00ff;
+  height: 10vh;
+  margin-top: none;
+}
+main {
+  margin: 0 15px;
+}
+h1 {
+  font-family: fantasy;
+  color: papayawhip;
+  font-size: 1.25em;
+}
+h2 {
+  font-family: copperplate;
+  font-size: 1.2rem;
+}
+div {
+  border-bottom: double 5px purple;
+}
+h2 ,
+div {
+  text-align: center;
+}
+label {
+  display: block;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #969696;
+  margin-bottom: 7px;
+}
+section h2 {
+  display: inline-block;
+}
+.header-flex {
+  display: flex;
+  overflow: none;
+  justify-content: center;
+}
+.hflex-item1 {
+  justify-content: center;
+}
+.main-form {
+  margin: 3px auto;
+  max-width: 315px;
+}
+input#name ,
+input#email ,
+input#phone ,
+input#address ,
+input#city ,
+input#province ,
+input#postal ,
+textarea {
+  margin-bottom: 11px;
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 6px;
+  background-color: #F6DDFF;
+}
+#signup p {
+  margin-top: -10px;
+  margin-bottom: 1.5em;
+  font-weight: lighter;
+}
