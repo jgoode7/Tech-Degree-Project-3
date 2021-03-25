@@ -1,5 +1,6 @@
 /*     Base Styles     */
-header {
+header ,
+footer {
   background-color: #cc00ff;
   height: 10vh;
   margin-top: none;
@@ -23,27 +24,8 @@ h2 ,
 div {
   text-align: center;
 }
-label {
-  display: block;
-  font-size: 12px;
-  font-family: sans-serif;
-  color: #969696;
-  margin-bottom: 7px;
-}
 section h2 {
-  display: inline-block;
-}
-.header-flex {
-  display: flex;
-  overflow: none;
-  justify-content: center;
-}
-.hflex-item1 {
-  justify-content: center;
-}
-.main-form {
-  margin: 3px auto;
-  max-width: 315px;
+  text-align: left;
 }
 input#name ,
 input#email ,
@@ -60,8 +42,49 @@ textarea {
   border-radius: 6px;
   background-color: #F6DDFF;
 }
+input#postal {
+  max-width: 65px;
+}
+textarea {
+  height: 15vh;
+}
+label {
+  display: block;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #969696;
+  margin-bottom: 7px;
+}
+button {
+  width: 100%;
+  background-color: #3E0253;
+  color: white;
+  font-family: cursive;
+  border-radius: 5px;
+}
+aside {
+  padding: 0 7px;
+}
+footer p {
+  text-align: center;
+  padding-top: 15px;
+}
 #signup p {
   margin-top: -10px;
   margin-bottom: 1.5em;
   font-weight: lighter;
+}
+
+/*     Class Selectors     */
+.header-flex {
+  display: flex;
+  overflow: none;
+  justify-content: center;
+}
+.hflex-item1 {
+  justify-content: center;
+}
+.main-form {
+  margin: 3px auto;
+  max-width: 315px;
 }
