@@ -17,22 +17,28 @@ h2 {
   font-family: copperplate;
   font-size: 1.2rem;
 }
-div {
+div#signup {
   border-bottom: double 5px purple;
 }
 h2 ,
 div {
   text-align: center;
 }
-section h2 {
-  text-align: left;
+legend {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 0.8em;
+}
+fieldset:first-child {
+  padding-top: 12px;
 }
 input#name ,
 input#email ,
-input#phone ,
+input#phone-num ,
 input#address ,
 input#city ,
-input#province ,
+select#province ,
 input#postal ,
 textarea {
   margin-bottom: 11px;
@@ -44,6 +50,10 @@ textarea {
 }
 input#postal {
   max-width: 65px;
+}
+fieldset {
+  border: none;
+  padding: 0;
 }
 textarea {
   height: 15vh;
@@ -57,13 +67,19 @@ label {
 }
 button {
   width: 100%;
+  margin-top: 5px;
   background-color: #3E0253;
   color: white;
   font-family: cursive;
   border-radius: 5px;
+  height: 8vh;
 }
 aside {
-  padding: 0 7px;
+  padding: 0 10px;
+}
+p {
+  font-family: fantasy;
+  font-size: .8rem;
 }
 footer p {
   text-align: center;
@@ -78,13 +94,46 @@ footer p {
 /*     Class Selectors     */
 .header-flex {
   display: flex;
-  overflow: none;
-  justify-content: center;
-}
-.hflex-item1 {
   justify-content: center;
 }
 .main-form {
   margin: 3px auto;
-  max-width: 315px;
+  max-width: 375px;
+}
+.container ,
+.container2 ,
+.container3 ,
+.container4 ,
+.container5  {
+  display: flex;
+  padding-bottom: 5px;
+}
+.button-label1 ,
+.button-label2 ,
+.button-label3 ,
+.button-label4 ,
+.button-label5 {
+  padding-left: 7px;
+}
+.copyright {
+  text-align: center;
+  font-family: fantasy;
+  padding-top: 7px;
+}
+input::placeholder {
+  color: red;
+  text-align: right;
+  font-style: italic;
+  font-size: .5em;
+}
+
+input:focus , section:focus , textarea:focus , button:focus {
+  outline-color: purple;
+  opacity: 0.45;
+}
+
+/*     Media Queries     */
+
+@media screen and (min-width: 768px) {
+
 }
