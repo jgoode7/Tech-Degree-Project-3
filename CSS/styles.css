@@ -132,6 +132,12 @@ footer p {
 .button-label5 {
   padding-left: 7px;
 }
+.button-label6 {
+    font-family: fantasy;
+    font-size: .8rem;
+    color: inherit;
+    padding-top: 15px;
+}
 .copyright {
   text-align: center;
   font-family: fantasy;
@@ -142,8 +148,8 @@ input::placeholder {
   text-align: right;
   font-style: italic;
   font-size: .5em;
+  padding-right: 5px;
 }
-
 input:focus , section:focus , textarea:focus , button:focus {
   outline-color: purple;
   opacity: 0.45;
