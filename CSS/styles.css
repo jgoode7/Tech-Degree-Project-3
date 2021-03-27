@@ -1,9 +1,11 @@
 /*     Base Styles     */
-header ,
-footer {
+html {
+  background-color: #FDF7FF;
+}
+header {
   background-color: #cc00ff;
-  height: 10vh;
-  margin-top: none;
+  height: 8vh;
+  margin-top: 0;
 }
 main {
   margin: 0 15px;
@@ -19,9 +21,14 @@ h2 {
 }
 div#signup {
   border-bottom: double 5px purple;
+  max-width: 375px;
+  margin: auto;
 }
-h2 ,
-div {
+div#signup p {
+  padding: 5px 15px 0 15px;
+  text-align: center;
+}
+h2 {
   text-align: center;
 }
 legend {
@@ -29,9 +36,6 @@ legend {
   padding-bottom: 8px;
   font-family: 'Dela Gothic One', cursive;
   font-size: 0.8em;
-}
-fieldset:first-child {
-  padding-top: 12px;
 }
 input#name ,
 input#email ,
@@ -43,7 +47,7 @@ input#postal ,
 textarea {
   margin-bottom: 11px;
   width: 100%;
-  height: auto;
+  height: 35px;
   border: none;
   border-radius: 6px;
   background-color: #F6DDFF;
@@ -51,12 +55,25 @@ textarea {
 input#postal {
   max-width: 65px;
 }
+select#province {
+  font-family: copperplate;
+  font-size: .9rem;
+}
+option {
+  font-family: 'Dela Gothic One', cursive;
+  font-size: .8em;
+}
 fieldset {
   border: none;
   padding: 0;
+  margin: auto 0;
+}
+fieldset:first-child {
+  padding-top: 12px;
 }
 textarea {
   height: 15vh;
+  width: 99%;
 }
 label {
   display: block;
@@ -130,10 +147,48 @@ input::placeholder {
 input:focus , section:focus , textarea:focus , button:focus {
   outline-color: purple;
   opacity: 0.45;
+  transition: all 1.5s ease;
 }
 
 /*     Media Queries     */
-
 @media screen and (min-width: 768px) {
-
+    aside {
+      padding: 0;
+    }
+    .contact-container ,
+    .contact-container2 ,
+    .contact-container3 ,
+    .contact-container4 ,
+    .contact-container5 ,
+    .contact-container6 ,
+    .contact-container7 {
+      display: flex;
+    }
+    label[for=name] ,
+    label[for=email] ,
+    label[for=phone-num] ,
+    label[for=address] ,
+    label[for=city] ,
+    label[for=province] {
+      margin-right: auto;
+      padding-top: 6px;
+    }
+    label[for=postal] {
+      margin-right: 85px;
+      padding-top: 6px;
+    }
+    input#name ,
+    input#email ,
+    input#phone-num ,
+    input#address ,
+    input#city ,
+    select#province {
+      max-width: 225px;
+      padding: 0;
+      height: 25px;
+    }
+    input#postal {
+      padding: 0;
+      height: 25px;
+    }
 }

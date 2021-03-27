@@ -30,51 +30,60 @@
 
             <fieldset>
 
-              <legend>Contact Information</legend>
-
-            <label for="name">Full Name</label>
-            <input placeholder="required" required type="text" id="name" name="user_name">
-
-            <label for="email">Email Address</label>
-            <input placeholder="required" required type="email" id="email" name="user_email">
-
-            <label for="phone-num">Phone Number</label>
-            <input type="phone" id="phone-num" name="user_phone">
-
-            <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
-
-            <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
-
-            <label for="province">Province</label>
-            <select id="province" name="user_province">
-              <optgroup label="Province">
-                <option value="alberta">Alberta</option>
-                <option value="british columbia">British Columbia</option>
-                <option value="saskatchewan">Saskatchewan</option>
-                <option value="manitoba">Manitoba</option>
-                <option value="ontario">Ontario</option>
-                <option value="quebec">Quebec</option>
-                <option value="new_brunswick">New Brunswick</option>
-                <option value="nova_scotia">Nova Scotia</option>
-                <option value="prince_edward_island">Prince Edward Island</option>
-                <option value="newfoundland">Newfoundland</option>
-              </optgroup>
-              <optgroup label="Territory">
-                <option value="yukon">Yukon</option>
-                <option value="northwest_territories">Northwest Territories</option>
-                <option value="nunavut">Nunavut</option>
-              </optgroup>
-              </select>
-            <label for="postal">Postal Code</label>
-            <input placeholder="A1A 1A1" required type="text" id="postal" name="user_postal">
-
+            <legend>Contact Information</legend>
+              <div>
+                <div  class="contact-container">
+                  <label for="name">Full Name</label>
+                  <input placeholder="required" required type="text" id="name" name="user_name">
+                </div>
+                <div class="contact-container2">
+                  <label for="email">Email Address</label>
+                  <input placeholder="required" required type="email" id="email" name="user_email">
+                </div>
+                <div class="contact-container3">
+                  <label for="phone-num">Phone Number</label>
+                  <input type="tel" id="phone-num" name="user_phone">
+                </div>
+                <div class="contact-container4">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address">
+                </div>
+                <div class="contact-container5">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city">
+                </div>
+                <div class="contact-container6">
+                <label for="province">Province</label>
+                <select id="province" name="user_province">
+                  <optgroup label="Province">
+                    <option value="alberta">Alberta</option>
+                    <option value="british columbia">British Columbia</option>
+                    <option value="saskatchewan">Saskatchewan</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="ontario">Ontario</option>
+                    <option value="quebec">Quebec</option>
+                    <option value="new_brunswick">New Brunswick</option>
+                    <option value="nova_scotia">Nova Scotia</option>
+                    <option value="prince_edward_island">Prince Edward Island</option>
+                    <option value="newfoundland">Newfoundland</option>
+                  </optgroup>
+                  <optgroup label="Territory">
+                    <option value="yukon">Yukon</option>
+                    <option value="northwest_territories">Northwest Territories</option>
+                    <option value="nunavut">Nunavut</option>
+                  </optgroup>
+                  </select>
+                  </div>
+                  <div class="contact-container7">
+                    <label for="postal">Postal Code</label>
+                    <input placeholder="A1A 1A1" required type="text" id="postal" name="user_postal">
+                  </div>
+                </div>
             </fieldset>
 
                 <hr>
 
-            <fieldset class="newsletter-section">
+            <fieldset>
               <legend>Newsletter</legend>
                 <aside>
                   <p>Select the newsletters you would like to receive:</p>
@@ -102,7 +111,7 @@
           </form>
       </main>
 
-      <p class="copyright">&#169The Code Review</p>
+      <p class="copyright">&#169;The Code Review</p>
 
   </body>
 
